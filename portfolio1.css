@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(7, 7, 7);
+    color: violet;
+}
+
+@media (min-width: 991px) {
+    .nav-item {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.parent1 {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1100px){
+    .parent2 {
+        padding: 70px;
+        gap: 25px;
+        text-align: justify;
+        font-size: x-large;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1100px)
+{
+    .parent2 {
+        padding: 70px;
+        gap: 25px;
+        flex-direction: column;
+        text-align: left;
+        font-size: medium;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.child1 {
+    text-align: left;
+    width: 50%;
+}
+
+.hr-lines {
+    position: relative;
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.hr-lines:before {
+    content: " ";
+    height: 2px;
+    width: 130px;
+    background: rgb(129, 13, 158);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.hr-lines:after {
+    content: " ";
+    height: 2px;
+    width: 130px;
+    background: rgb(129, 13, 158);
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
